@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.navbar {
+  background: #0074d9;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: underline;
+  
+}
+
+.nav-links {
+  list-style: none;
+  float: right;
+  padding: 10px;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero-section {
+  background: url('/media/pexels-shvetsa-5682924.jpg') no-repeat center center/cover;
+  background-color: #3e3a3a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-blend-mode: lighten;
+}
+.hero-section h2 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  text-shadow:0px 0px 5px #333;
+}
+.hero-section p{
+  font-size: 2rem;
+  margin-bottom: 70px;
+  text-shadow:0px 0px 5px #333;
+}
+button {
+  background: #0074d9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.services-section, .about-section, .testimonials-section, .contact-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+#papa{
+  height: 400px;
+  width: 400px;
+  margin-block-start: 30px;
+  border-radius: 80px;
+  border: solid #0074d9 5px;
+  box-shadow: 5px 5px 20px black;
+}
+.service-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+
+}
+h2{
+  font-size: 40px;
+}
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial {
+  background: #e3e3e3;
+  padding: 1.5rem;
+  margin: 10px;
+  border-left: 5px solid #0074d9;
+  font-style: italic;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+#foot{
+  background: #0074d9;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}

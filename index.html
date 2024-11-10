@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthCare Clinic</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">HealthCare Clinic</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">About us</a></li>
+        <li><a href="#about">Doctor's Saying</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="hero-text">
+      <h2>Your Health, Our Priority</h2>
+      <p>Comprehensive healthcare for your whole family.</p>
+      <button onclick="scrollToSection('contact')">Book Appointment</button>
+    </div>
+  </header>
+  <br>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2 >About us</h2>
+    <br>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Homeopathic Treatment</h3>
+        <p>Safe and Secure homeopathic treatment.</p>
+      </div>
+      <br><br>
+      <div class="service-card">
+        <h3>Free consultancy</h3>
+        <p>Consultancy is absolutely free, feel free to contact.</p>
+      </div>
+      <br><br>
+      <div class="service-card">
+        <h3>18yrs Experience</h3>
+        <p>Experienced doctor.</p>
+      </div>
+      <br><br>
+      <div class="service-card">
+        <h3>Meds for every disease available.</h3>
+        <p>hey.</p>
+      </div>
+      <br><br>
+      <div class="service-card">
+        <h3>18yrs Experience</h3>
+        <p>Experienced doctor.</p>
+      </div>
+      <br><br>
+      <div class="service-card">
+        <h3>Meds for every disease available.</h3>
+        <p>hey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>Doctor's sayings,</h2><br>
+    <p>"At our clinic, every patient is treated with the utmost respect and empathy. I am committed to fostering a supportive environment where patients feel heard, safe, and confident in their care. Medicine is not just about diagnosing diseases; it's about building relationships and creating lasting trust."
+      <br>
+      — Dr. xyz, BHMS</p>
+      <img id="papa" src="/media/Unknown.jpeg" alt="zz" >
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>What Our Patients Say</h2><br>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"The doctors and staff at HealthFirst Clinic are amazing. I felt comfortable and well cared for!"</p>
+        <p>- Sarah L.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Quick service and the staff is very friendly. Highly recommend this clinic."</p>
+        <p>- Michael R.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form" onsubmit="submitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-response"></p>
+    </form>
+  </section>
+
+  <footer id="foot">
+    <div>
+      <p>&copy;2024 All Rights Reserved, Nirmal Homeopathic Clinic</p>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>
