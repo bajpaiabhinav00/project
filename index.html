@@ -10,13 +10,13 @@
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
-      <h1 class="logo">HealthCare Clinic</h1>
+      <h1 class="logo"><a href="#clinic">HealthCare Clinic</a></h1>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">About us</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#about">Doctor's Saying</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -33,37 +33,42 @@
 
   <!-- Services Section -->
   <section id="services" class="services-section">
-    <h2 >About us</h2>
+    <h2 >Services</h2>
     <br>
     <div class="services-container">
       <div class="service-card">
         <h3>Homeopathic Treatment</h3>
-        <p>Safe and Secure homeopathic treatment.</p>
+        <p>We offer natural, holistic homeopathic treatments to support wellness and treat a variety of conditions.</p>
       </div>
-      <br><br>
+      <br>
       <div class="service-card">
-        <h3>Free consultancy</h3>
-        <p>Consultancy is absolutely free, feel free to contact.</p>
+        <h3>Free Consultation</h3>
+        <p>New patients can benefit from a free initial consultation to discuss their health needs and explore treatment options.</p>
       </div>
-      <br><br>
+      <br>
       <div class="service-card">
-        <h3>18yrs Experience</h3>
-        <p>Experienced doctor.</p>
+        <h3>Experienced Medical Team</h3>
+        <p>Our team of skilled doctors, nurses, and staff are committed to delivering high-quality healthcare.</p>
       </div>
-      <br><br>
+      <br>
       <div class="service-card">
-        <h3>Meds for every disease available.</h3>
-        <p>hey.</p>
+        <h3>Patient-Centered Care.</h3>
+        <p>At HealthCare Clinic, we prioritize your health, comfort, and well-being with a personalized approach to care.</p>
       </div>
-      <br><br>
+      <br>
       <div class="service-card">
-        <h3>18yrs Experience</h3>
-        <p>Experienced doctor.</p>
+        <h3>Trust & Transparency</h3>
+        <p>We believe in open communication, ensuring you feel supported and informed at every stage.</p>
       </div>
-      <br><br>
+      <br>
       <div class="service-card">
-        <h3>Meds for every disease available.</h3>
-        <p>hey.</p>
+        <h3>State-of-the-Art Facility</h3>
+        <p>Equipped with the latest technology for accurate diagnosis and effective treatment.</p>
+      </div>
+      <br>
+      <div class="service-card">
+        <h3>Your Health Journey</h3>
+        <p>We’re here to partner with you on your path to better health and wellness.</p>
       </div>
     </div>
   </section>
@@ -73,8 +78,8 @@
     <h2>Doctor's sayings,</h2><br>
     <p>"At our clinic, every patient is treated with the utmost respect and empathy. I am committed to fostering a supportive environment where patients feel heard, safe, and confident in their care. Medicine is not just about diagnosing diseases; it's about building relationships and creating lasting trust."
       <br>
-      — Dr. xyz, BHMS</p>
-      <img id="papa" src="/media/Unknown.jpeg" alt="zz" >
+      — Dr. Phillip Gorge</p>
+      <img id="papa" src="/media/pexels-chokniti-khongchum-1197604-2280551.jpg" alt="zz" >
   </section>
 
   <!-- Testimonials Section -->
@@ -82,11 +87,23 @@
     <h2>What Our Patients Say</h2><br>
     <div class="testimonials-container">
       <div class="testimonial">
-        <p>"The doctors and staff at HealthFirst Clinic are amazing. I felt comfortable and well cared for!"</p>
+        <p>"I was impressed by how modern and well-equipped the clinic is. They used the latest technology during my exam, which made me feel I was in the best hands possible. It’s clear they are committed to providing high-quality care with the latest advancements."</p>
         <p>- Sarah L.</p>
       </div>
       <div class="testimonial">
-        <p>"Quick service and the staff is very friendly. Highly recommend this clinic."</p>
+        <p>"I’m usually anxious about medical visits, but the entire team went out of their way to make me comfortable. The environment was warm and inviting, and I felt relaxed during my appointment. This clinic truly puts patient comfort first."</p>
+        <p>- James T.</p>
+      </div>
+      <div class="testimonial">
+        <p>"I was impressed by how modern and well-equipped the clinic is. They used the latest technology during my exam, which made me feel I was in the best hands possible. It’s clear they are committed to providing high-quality care with the latest advancements."</p>
+        <p>- Maria L.</p>
+      </div>
+      <div class="testimonial">
+        <p>"From the moment I walked through the doors, I felt welcomed and cared for. The staff was attentive, and the doctor took the time to explain everything in detail. I never felt rushed, and my concerns were always addressed with empathy and professionalism. I couldn’t have asked for a better experience."</p>
+        <p>- Kevin R.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Scheduling my appointment was easy, and the team was very accommodating. They answered all my questions over the phone and even managed to fit me in at a convenient time. I was so relieved at how simple the process was."</p>
         <p>- Michael R.</p>
       </div>
     </div>
@@ -98,18 +115,39 @@
     <form id="contact-form" onsubmit="submitForm(event)">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
+      <label for="phone">Mobile No.:</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" required>
       <label for="email">Email:</label>
       <input type="email" id="email" required>
-      <label for="message">Message:</label>
+      <label for="message">How Can We Help You:</label>
       <textarea id="message" required></textarea>
       <button type="submit">Send Message</button>
       <p id="form-response"></p>
     </form>
   </section>
 
+  <section id="clinic" class="about-section">
+    <h2>About HealthCare Clinic</h2><br>
+    <p>At Healthcare Clinic, we are committed to providing compassionate, high-quality medical care to every patient who walks through our doors. Located conveniently in the City, our clinic offers a wide range of services designed to meet the unique healthcare needs of individuals and families in our community. <br>
+
+      Our team of experienced healthcare professionals prioritizes patient well-being, utilizing state-of-the-art technology and evidence-based practices to deliver accurate diagnoses and effective treatments. We believe in a patient-centered approach, meaning that every treatment plan is personalized to ensure the best possible outcomes. Whether you’re coming in for a routine check-up, a specialist consultation, or a comprehensive health plan, you can trust that our clinic is dedicated to helping you achieve optimal health. <br>
+      
+      Our Mission
+      Our mission is to promote wellness and improve the quality of life for our patients by offering accessible, compassionate, and holistic care. We aim to empower our patients to make informed health choices, guiding them with empathy, respect, and understanding.
+      <br>
+      <br><br><br>
+      <b>Healthcare Clinic:</b> <br>
+      1234 Wellness Street <br>
+      Midtown, Metropolis <br>
+      Zip Code: 54321 <br>
+      Phone:<a style="text-decoration: none; color: #333;" href="tel:(123) 456-7890">(123) 456-7890</a><br>
+      Mail: <a style="text-decoration: none; color: #333;" href="mailto:contact@healthcareclinic.com">contact@healthcareclinic.com</a></p>
+
+  </section>
+
   <footer id="foot">
     <div>
-      <p>&copy;2024 All Rights Reserved, Nirmal Homeopathic Clinic</p>
+      <p>&copy;2024 All Rights Reserved, HealthCare Clinic</p>
     </div>
   </footer>
   <script src="/js/script.js"></script>

@@ -32,7 +32,9 @@ body {
   text-decoration: underline;
   
 }
-
+.logo a{
+  color: #fff;
+}
 .nav-links {
   list-style: none;
   float: right;
@@ -48,8 +50,18 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-}
+  padding: 10px;
+  border-radius: 50%;
+  transition: color 1s;
 
+
+}
+.nav-links a:hover{
+  color: #3ff299;
+  transition: transform 3s;
+  transition: 0.4s;
+
+}
 .hero-section {
   background: url('/media/pexels-shvetsa-5682924.jpg') no-repeat center center/cover;
   background-color: #3e3a3a;
